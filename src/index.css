@@ -1,0 +1,157 @@
+#root {
+  width: 100vw;
+  font-family: 'Arial', sans-serif;
+}
+
+.App {
+  max-width: 100%;
+  margin: 0;
+  background-color: #dbdbdb;
+
+}
+
+.App > h1 {
+  text-align: center;
+}
+
+.feed {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  width: 60%;
+  margin: auto;
+}
+
+h2{
+  border-bottom: 4px solid #C8102E;
+}
+
+.story {
+  position: relative;
+  padding: 1em;
+  box-shadow: 0 1px 2px #aeaeae;
+  background-color: #eee;
+}
+
+.story_headline_link:hover {
+  border-bottom: 1px solid; /* Add underline on hover */
+}
+
+ /* unvisited link */
+ a:link {
+  color: black;
+}
+
+/* visited link */
+a:visited {
+  color: purple;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+} 
+
+
+
+
+
+.story span.delete {
+  position: absolute;
+  width: 1.5rem;
+  height: 1.5rem;
+  text-align: center;
+  line-height: 1.5rem;
+  top: 10px;
+  right: 10px;
+  background: #C8102E;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.story_header {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+}
+
+.story_header h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 1.5em;
+}
+
+.story_header h1 > a {
+  text-decoration: none;
+}
+
+.story_creator {
+  display: block;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+.story_image {
+  max-width: 20%;
+}
+
+.story_image img {
+  width: 100%;
+}
+
+.header {
+  display: flex; 
+  height: 6rem;
+  align-items: center; 
+  justify-content: space-between; 
+  background-color: #C8102E;
+  padding: 1em;
+  margin: 0;
+  color: white;
+}
+
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+  width: 20%;
+  margin-left: 2rem;
+}
+
+.site-title {
+  margin: 0; 
+  font-size: 1.5em; 
+  flex-grow: 1; 
+  text-align: center; 
+}
+
+.navigation{
+  width: 20%;
+  display: flex;
+  align-items: center;
+}
+.search-icon {
+  font-size: 2em;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  margin-left:  1em;
+}
+
+.nav-list {
+  list-style: none; 
+  padding: 0; 
+  display: flex; 
+  justify-content: center;
+  gap: 0.5em; 
+}
+
+.nav-list li {
+  cursor: pointer; 
+}
+
+.nav-list li:hover {
+  text-decoration: underline; 
+}
